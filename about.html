@@ -12,7 +12,12 @@
   <!-- Navigation -->
   <nav>
       <a href="index.html" class="logo"><img src="images/c.png" alt="Brian Logo">
-      <ul>
+        <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+      <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -76,6 +81,15 @@
       evt.currentTarget.classList.add("active-link");
       document.getElementById(tabname).classList.add("active-tab");
   }
+  </script>
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    mobileMenu.classList.toggle('is-active');
+});
   </script>
 </body>
 </html>
