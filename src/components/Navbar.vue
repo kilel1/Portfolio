@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/" class="logo">
-      <img src="../images/c.png" alt="Brian Logo">
+      <img src="../assets/images/c.png" alt="Brian Logo">
     </router-link>
     
     <!-- Mobile menu toggle button -->
